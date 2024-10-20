@@ -469,6 +469,7 @@
   text-align: center;
   margin-top: 1.75rem;
   font-size: 0.8rem;
+  padding-inline: 0.5rem;
 }
 
 .footer::before {
