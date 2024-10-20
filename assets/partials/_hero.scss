@@ -1,0 +1,134 @@
+.hero {
+    margin-top: 5rem;
+
+}
+
+
+.bg::before{
+    content: '';
+    width: 100%;
+    background: linear-gradient(to top, var(--primary-color), transparent);
+    height: 250px;
+    position: absolute;
+    top: 47.2rem;
+    left: 0;
+    z-index: -1;
+}
+
+.hero__box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.hero__text{
+    text-align: center;
+    margin-top: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    line-height: 2.8rem;
+}
+
+.hero__text h3{
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.hero__text h2{
+    font-weight: 800;
+    font-size: 2.9rem;
+}
+
+.line{
+    content: '';
+    width: 50rem;
+    height: .25rem;
+    background: var(--divider-bg-color);
+    margin: 2rem;
+}
+
+.price__hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: .3rem;
+    margin-top: 2rem;
+}
+
+.price__hero p{
+    font-size: 1.5rem;
+}
+
+.price__hero span{
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.price__hero span:nth-child(1){
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-left: .8rem;
+}
+
+
+.btn__bg{
+    background: var(--btn-bg-color-gradient);
+    outline: 3px solid transparent;
+    transition: background 1s, outline 1s, transform 1s;
+    background-size: 250%;
+    font-weight: 800;
+    padding: .8rem 1.5rem;
+    font-size: 1.1rem;
+    border-radius: 500px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-top: 2rem;
+}
+
+.btn{
+    animation: wiggle 1s ease-out infinite alternate;
+}
+
+.btn__bg:hover{
+    background-color: transparent;
+    background-position: 100%;
+    outline: 2px solid var(--secondary-color);
+    transform: scale(1.05); 
+    animation-play-state: paused;
+    animation: none;
+}
+
+@keyframes wiggle {
+    0%,15%{
+        transform: rotatez(0deg);
+    }
+    15%,35%{
+        transform: rotatez(-8deg);
+    }
+    35%,55%{
+        transform: rotatez(8deg);
+    }
+    55%,75%{
+        transform: rotatez(-8deg);
+    }
+    75%,100%{
+        transform: rotatez(0deg);
+    }
+}
+
+
+.price__hero span:nth-child(4){
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 3rem;
+    text-align: center;
+    width: 30ch;
+}
+
+@media (width < 768px){
+    .line{
+        width: 26rem;
+    }
+
+}

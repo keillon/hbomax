@@ -1,0 +1,127 @@
+.cards__text{
+    text-align: center;
+    font-size: 2.4rem;  
+}
+
+.card{
+    margin-top: 20rem;
+   
+}
+
+.bg{
+    background-image: url('/assets/images/background-movies-series.png');
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.tittle__card{
+    margin-bottom: 20rem;
+}
+
+
+.card__content{
+    background: var(--card-bg-color);
+    max-width: 600px;
+    height: 700px;
+    padding: 1rem 4rem;
+    border-radius: 1rem;
+}
+
+.card__1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 1rem;
+}
+
+.cards-wrapper{
+    margin: -15rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10rem;
+    perspective: 100px;
+    perspective-origin: top center;
+}
+
+
+.text__card-price span{
+    font-weight: 300;
+    font-size:.9rem;
+}
+.text__card-price{
+    font-weight: 800;
+    font-size: 2rem;
+}
+.text__card-tittle{
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+.text__middle-card{
+    font-size: 1.7rem;
+    margin: 2rem 0;
+    padding: 0 .5rem;
+}
+ 
+.text__middle-card:nth-of-type(1)::marker{
+    content: '+';
+}
+ 
+.text__middle-card:nth-of-type(2)::marker{
+    content: '+';
+}
+ 
+.text__middle-card:nth-of-type(3)::marker{
+    content: '+';
+}
+ 
+.text__middle-card:nth-of-type(4)::marker{
+    content: '+';
+}
+ 
+.text__middle-card:nth-of-type(5)::marker{
+    content: '+';
+}
+ 
+.text__middle-card:nth-of-type(6)::marker{
+    content: '+';
+}
+
+.btn__card{
+    font-weight: 800;
+    padding: .9rem 5rem;
+    font-size: 1.1rem;
+    border-radius: 500px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.btn__card--content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (width < 768px){
+    .cards-wrapper{
+        padding-inline: .1rem 1.02rem;
+    }
+
+    .text__card-price span{
+        font-size:.7rem;
+    }
+    .text__card-price{
+        font-size: 1.5rem;
+        margin-left: 4rem;
+    }
+    .btn__card{
+        font-size: .8rem;
+    }
+
+    .text__middle-card{
+        font-size: 1.4rem;
+    }
+
+   
+}

@@ -1,0 +1,70 @@
+.wrapper--actors{
+    margin-top: 25rem;
+    h1{
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        font-weight: 400;
+    }
+}
+
+.card__actors--wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-top: 2rem;
+    img{
+        width: 400px;
+        cursor: pointer;
+    } 
+}
+
+
+.img-actor:hover:nth-child(1){
+    background-image: url('/assets/images/MAX-Hover.webp');
+    background-size: cover;
+    transition: 1s;
+    scale: 1.03;
+}
+
+.img-actor:hover:nth-child(2){
+    background-image: url('/assets/images/hbo-hover_0.webp');
+    background-size: cover;
+    transition: 1s;
+    scale: 1.03;
+}
+
+.img-actor:hover:nth-child(3){
+    background-image: url('/assets/images/UCL-Hover.webp');
+    background-size: cover;
+    transition: 1s;
+    scale: 1.03;
+}
+
+.img-actor:hover:nth-child(4){
+    background-image: url('/assets/images/WB-Hover.webp');
+    background-size: cover;
+    transition: 1s;
+    scale: 1.03;
+}
+
+.img-actor:hover:nth-child(5){
+    background-image: url('/assets/images/CN-Hover.png');
+    background-size: cover;
+    transition: 1s;
+    scale: 1.03;
+}
+
+.img-actor:hover:nth-child(6){
+    background-image: url('/assets/images/DC-Hover.webp');
+    background-size: cover;
+    transition: 1s;
+    scale: 1.03;
+}
+
+.img-actor img:hover{
+    opacity: 0;
+    transition: opacity 1.5s;
+}
